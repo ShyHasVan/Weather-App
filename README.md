@@ -14,32 +14,32 @@ Icon Representation: To enhance the visual experience, the app employs weather i
 
 Modular Design: The code follows a modular design pattern, separating the logic for fetching weather data and forecasts into distinct functions. This approach promotes code readability, maintainability, and future expansion.
 
-# How to use
+## How to use
 
-## Clone the Repository:
+### Clone the Repository:
 git clone https://github.com/your-username/weather-app.git
 cd weather-app
 
-## Get API Key:
+### Get API Key:
 You'll need an API key from OpenWeatherMap to access weather data. Save this key in a file named API_KEY in the project's root directory.
 
-## Install Dependencies:
+### Install Dependencies:
 pip install -r requirements.txt
 
-## Run the App:
+### Run the App:
 python manage.py runserver
 The app will be accessible at http://127.0.0.1:8000/ in your web browser.
 
-## Search for Weather:
+### Search for Weather:
 Open the app in your browser.
 Enter the name of a city in the input field.
 Click the "Get Weather" button.
 
-## View Results:
+### View Results:
 The app will display the current weather conditions for the city you entered.
 You can also view a 5-day forecast to plan ahead.
 
-# Preview
+## Preview
 ![Screenshot 2023-08-23 152445](https://github.com/ShyHasVan/Weather-App/assets/142844565/8c640bf5-12a9-4991-9407-8262bb8f5687)
 
 
