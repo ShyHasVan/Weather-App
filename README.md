@@ -14,5 +14,5 @@ Icon Representation: To enhance the visual experience, the app employs weather i
 
 Modular Design: The code follows a modular design pattern, separating the logic for fetching weather data and forecasts into distinct functions. This approach promotes code readability, maintainability, and future expansion.
 
-##Preview
+## Preview
 ![Screenshot 2023-08-23 152445](https://github.com/ShyHasVan/Weather-App/assets/142844565/8c640bf5-12a9-4991-9407-8262bb8f5687)
