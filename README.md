@@ -43,7 +43,7 @@ You can also view a 5-day forecast to plan ahead.
 ![Screenshot 2023-08-23 152445](https://github.com/ShyHasVan/Weather-App/assets/142844565/8c640bf5-12a9-4991-9407-8262bb8f5687)
 
 
-## Notes
+### Notes
 Make sure to keep your API key secure. You can use environment variables to manage sensitive information.
 This app uses the OpenWeatherMap API, so you might encounter rate limits if used extensively.
 Feel free to customize the app's appearance, add new features, or adapt it to your needs.
