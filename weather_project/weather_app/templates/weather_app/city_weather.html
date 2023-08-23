@@ -1,0 +1,66 @@
+<div class="weather-container">
+    <div class="weather-icon">
+        {% if weather_data %}
+            <img src="https://openweathermap.org/img/w/{{ weather_data.icon }}.png" alt="{{ weather_data.description }}">
+        {% endif %}
+    </div>
+    <div class="weather-main">
+        {% if weather_data %}
+            <h1>{{ weather_data.city }}, {{ weather_data.country }}</h1>
+            <h2>{{ weather_data.temperature }}</h2>
+            <p>{{ weather_data.description }}</p>
+        {% endif %}
+    </div>
+    <div class="weather-details">
+        <div class="weather-top">
+            {% if weather_data %}
+                <div class="weather-detail">
+                    <h4>Sunrise</h4>
+                    <p>{{ weather_data.sunrise }}</p>
+                </div>
+                <div class="weather-detail">
+                    <h4>Sunset</h4>
+                    <p>{{ weather_data.sunset }}</p>
+                </div>
+                <div class="weather-detail">
+                    <h4>Pressure</h4>
+                    <p>{{ weather_data.pressure }}</p>
+                </div>
+                <div class="weather-detail">
+                    <h4>Humidity</h4>
+                    <p>{{ weather_data.humidity }}</p>
+                </div>
+            {% endif %}
+        </div>
+        <div class="weather-bottom">
+            {% if weather_data %}
+                <div class="weather-detail">
+                    <h4>Cloudiness</h4>
+                    <p>{{ weather_data.cloudiness }}</p>
+                </div>
+                <div class="weather-detail">
+                    <h4>Rain (3h)</h4>
+                    <p>{{ weather_data.rain_3h }}</p>
+                </div>
+                <div class="weather-detail">
+                    <h4>Wind Speed</h4>
+                    <p>{{ weather_data.wind_speed }}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% if daily_forecasts %}
+    <h2>5-Day Forecasts</h2>
+    <div class="forecast-container">
+        {% for forecast in daily_forecasts %}
+            <div class="forecast">
+                <h3>{{ forecast.day }}</h3>
+                <p>{{ forecast.temperature }}°C</p>
+                <p>{{forecast.description}}</p>
+                <img src="https://openweathermap.org/img/w/{{ forecast.icon }}.png" alt="{{ forecast.description }}">
+            </div>
+        {% endfor %}    
+    </div>
+{% endif %}

@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+form {
+    margin: 5px 0 35px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f2f2f2;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+input[type="text"]:focus {
+    background-color: #444;
+    border-color: #4CAF50;
+    color: #fff;
+}
+
+input[type="text"]:hover { /* Add this rule for hover effect */
+    border-color: #4CAF50;
+}
+
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+}
+
+.weather-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.weather-main {
+    text-align: center;
+    margin-right: 60px;
+    margin-bottom: 50px;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.weather-icon img {
+    width: 160px;
+    margin-right: 40px; /* Add space between icon and text */
+    margin-top: 80px;
+}
+
+.weather-details {
+    align-self: flex-start; /* Align with the top of the main weather */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column; /* Display content in a column */
+    background-color: #333;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    color: #f2f2f2;
+    flex: 0.5; /* Expand to fill remaining space */
+}
+
+.weather-top{
+    display: flex;
+    flex-direction: row; /* Display content in a row */
+    align-items: center; /* Center vertically */
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+}
+.weather-bottom {
+    display: flex;
+    flex-direction: row; /* Display content in a row */
+    align-items: center; /* Center vertically */
+    padding: 10px 0;
+}
+
+.weather-detail {
+    flex: 0.5;
+    margin: 0;
+    padding: 5px;
+    border: none;
+}
+
+
+.forecast-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.forecast {
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+    width: calc(100% / 5 - 20px);
+    box-sizing: border-box;
+    color: #f2f2f2;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.forecast:hover {
+    transform: scale(1.05) translate(0, -5px);
+    background-color: #444;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 767px) {
+    .forecast {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .forecast {
+        width: 100%;
+    }
+}
